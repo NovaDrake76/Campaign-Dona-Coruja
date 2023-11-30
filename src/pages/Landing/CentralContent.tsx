@@ -3,17 +3,17 @@ import Button from "../../components/Button";
 
 const CentralContent = () => {
     return (
-        <div className="flex flex-col items-center text-black mt-12 gap-28">
+        <div className="flex flex-col items-center text-black mt-12 gap-12">
             <TextAndImage
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et mollis lectus, eget sagittis erat. Suspendisse ac urna scelerisque, auctor metus sed, pharetra erat. Phasellus sodales, mauris luctus aliquet elementum, urna purus tempor sem, id lacinia odio eros sed mauris. Aliquam sagittis orci in nunc ornare accumsan. "
-                image="https://scontent.fnat1-1.fna.fbcdn.net/v/t39.30808-6/405366313_1824723264614775_6930720713956821288_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF2ZUPBCFGl7yxeU7-R_FyF9FG2Pdg-6HP0UbY92D7oc76ME77JbdIf9xH1v-jb12R50EUf1MupripL8RP6cILi&_nc_ohc=7f62mO2B5fwAX-tRlXo&_nc_ht=scontent.fnat1-1.fna&oh=00_AfDbMJRka9EGPhLuXhdYJR6mU06dp7X031rusqT6zuSnsQ&oe=65693C7D"
+                text="Em 2014, um grupo de pessoas reuniu esforços em prol da arrecadação de dinheiro e de materiais escolares, a fim de ajudar crianças cujas famílias não tinham condições de comprar todo o aparato necessário para a volta às aulas. Desde então, todos os anos a campanha Dona Coruja garante que jovens estudantes de Caicó e região recebam auxílio."
+                image='/images/12.png'
             />
-            <div>
-                <Button text="Faça agora sua doação" size="l" color="secondary" />
+            <div className="bg-[url('./assets/bg-section.webp')] bg-cover bg-center w-full h-72 flex flex-col items-center justify-center gap-4">
+                <Button text="Saiba como ajudar" size="l" color="secondary" />
             </div>
             <TextAndImage
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et mollis lectus, eget sagittis erat. Suspendisse ac urna scelerisque, auctor metus sed, pharetra erat. Phasellus sodales, mauris luctus aliquet elementum, urna purus tempor sem, id lacinia odio eros sed mauris. Aliquam sagittis orci in nunc ornare accumsan. "
-                image="https://scontent.fnat1-1.fna.fbcdn.net/v/t39.30808-6/405366313_1824723264614775_6930720713956821288_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF2ZUPBCFGl7yxeU7-R_FyF9FG2Pdg-6HP0UbY92D7oc76ME77JbdIf9xH1v-jb12R50EUf1MupripL8RP6cILi&_nc_ohc=7f62mO2B5fwAX-tRlXo&_nc_ht=scontent.fnat1-1.fna&oh=00_AfDbMJRka9EGPhLuXhdYJR6mU06dp7X031rusqT6zuSnsQ&oe=65693C7D"
+                text="Nosso objetivo é atender alunos de escolas públicas, de modo que possam iniciar o ano letivo com um material escolar decente. Esperamos que assim eles se sintam mais estimulados em relação aos estudos e consigam contribuir para um futuro melhor."
+                image='/images/3.jpg'
                 reverse
             />
 

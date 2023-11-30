@@ -5,6 +5,14 @@ import { Link } from 'react-router-dom';
 
 
 const Navbar: React.FC = () => {
+
+    const links = [
+        { to: "/", text: "Início" },
+        { to: "/donation", text: "Doação" },
+        { to: "/schools", text: "Escolas" },
+    ];
+
+
     return (
         <nav className="absolute flex items-center justify-center bg-transparent py-4 px-6 w-screen">
             <div className='flex items-center justify-between w-full max-w-[1280px]'>
@@ -12,9 +20,11 @@ const Navbar: React.FC = () => {
                     <img src={Logo} alt="Logo" className="h-[75px] w-[75px]" />
                 </div>
                 <div className="flex items-center justify-center">
-                    <Link to="/" className="text-white mx-4">Início</Link>
-                    <Link to="/donation" className="text-white mx-4">Doação</Link>
-                    <Link to="/schools" className="text-white mx-4">Escolas</Link>
+                    {links.map((link, index) => (
+                        <Link key={index} to={link.to} className="text-white mx-4 hover:text-gray-50 hover:underline">
+                            {link.text}
+                        </Link>
+                    ))}
                 </div>
                 <div>
                     <Button text="Doe agora" size="s" color="primary" />

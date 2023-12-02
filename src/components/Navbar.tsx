@@ -5,11 +5,14 @@ import { Link } from 'react-router-dom';
 
 
 const Navbar: React.FC = () => {
+    const isMobile = window.innerWidth < 768;
 
     const links = [
         { to: "/", text: "Início" },
-        { to: "/donation", text: "Doação" },
-        { to: "/schools", text: "Escolas" },
+        ...isMobile ? [] : [
+            { to: "/donation", text: "Doação" },
+        ]
+        // { to: "/schools", text: "Escolas" },
     ];
 
 
@@ -17,7 +20,9 @@ const Navbar: React.FC = () => {
         <nav className="absolute flex items-center justify-center bg-transparent py-4 px-6 w-screen">
             <div className='flex items-center justify-between w-full max-w-[1280px]'>
                 <div className="flex items-center ">
-                    <img src={Logo} alt="Logo" className="h-[75px] w-[75px]" />
+                    <Link to="/">
+                        <img src={Logo} alt="Logo" className="h-[75px] w-[75px] object-contain" />
+                    </Link>
                 </div>
                 <div className="flex items-center justify-center">
                     {links.map((link, index) => (
@@ -26,9 +31,11 @@ const Navbar: React.FC = () => {
                         </Link>
                     ))}
                 </div>
-                <div>
+
+                <Link to="/donation">
                     <Button text="Doe agora" size="s" color="primary" />
-                </div>
+                </Link>
+
             </div>
 
         </nav>

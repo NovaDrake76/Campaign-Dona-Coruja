@@ -1,5 +1,6 @@
 import TextAndImage from "../../components/TextAndImage";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 const CentralContent = () => {
     return (
@@ -9,7 +10,10 @@ const CentralContent = () => {
                 image='/images/12.png'
             />
             <div className="bg-[url('./assets/bg-section.webp')] bg-cover bg-center w-full h-72 flex flex-col items-center justify-center gap-4">
-                <Button text="Saiba como ajudar" size="l" color="secondary" />
+                <Link to="/donation">
+
+                    <Button text="Saiba como ajudar" size="l" color="secondary" />
+                </Link>
             </div>
             <TextAndImage
                 text="Nosso objetivo é atender alunos de escolas públicas, de modo que possam iniciar o ano letivo com um material escolar decente. Esperamos que assim eles se sintam mais estimulados em relação aos estudos e consigam contribuir para um futuro melhor."

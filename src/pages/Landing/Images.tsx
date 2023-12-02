@@ -18,7 +18,7 @@ const Images = () => {
 
     return (
         <div className="flex w-full justify-center">
-            <div className="flex items-center justify-around gap-12 max-w-5xl -mt-24">
+            <div className="flex flex-col md:flex-row items-center justify-around gap-12 max-w-5xl -mt-24">
                 {Images.map((image) => (
                     <LabeledImage src={image.src} alt={image.alt} label={image.label} />
                 ))}

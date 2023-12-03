@@ -11,8 +11,8 @@ const Navbar: React.FC = () => {
         { to: "/", text: "Início" },
         ...isMobile ? [] : [
             { to: "/donation", text: "Doação" },
-        ]
-        // { to: "/schools", text: "Escolas" },
+        ],
+         { to: "/schools", text: "Escolas" },
     ];
 
 

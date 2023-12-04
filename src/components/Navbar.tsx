@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
     const isMobile = window.innerWidth < 768;
 
     const links = [
-        { to: "/", text: "Início" },
         ...isMobile ? [] : [
+            { to: "/", text: "Início" },
             { to: "/donation", text: "Doação" },
         ],
         { to: "/schools", text: "Escolas" },
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <Link to="/donation">
-                    <Button text="Doe agora" size="s" color="secondary" />
+                    <Button text="Doe agora" size="s" color="primary" />
                 </Link>
 
             </div>

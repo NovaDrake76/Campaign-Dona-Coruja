@@ -37,9 +37,9 @@ const Graph = () => {
 
 
     return (
-        <div className="bg-[#A185DE] w-full flex items-center justify-center">
-            <div className="w-full max-w-[1550px] flex items-center justify-center bg-[url('./assets/icons.png')]  bg-contain  bg-center bg-no-repeat ">
-                <div className='w-[380px]  h-64  md:w-[800px] lg:w-[1100px] md:h-[700px] p-4 md:p-[116px] '>
+        <div className="bg-[#A185DE] w-full flex items-center justify-center " >
+            <div className="w-full max-w-[1550px] flex items-center justify-center bg-[url('./assets/icons.png')]   bg-contain  bg-center bg-no-repeat ">
+                <div className='w-[340px]  h-64  md:w-[800px] lg:w-[1100px] md:h-[700px] py-4  md:p-[116px] '>
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart
                             data={data}
@@ -56,7 +56,8 @@ const Graph = () => {
                             </Bar>
                         </BarChart>
                     </ResponsiveContainer>
-                </div></div>
+                </div>
+            </div>
         </div>
     )
 }

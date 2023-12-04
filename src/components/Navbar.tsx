@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <Link to="/donation">
-                    <Button text="Doe agora" size="s" color="primary" />
+                    <Button text="Doe agora" size="s" color="secondary" />
                 </Link>
 
             </div>

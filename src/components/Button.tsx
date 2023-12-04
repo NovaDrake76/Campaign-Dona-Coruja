@@ -9,7 +9,7 @@ type ButtonProps = {
 };
 
 const Button: React.FC<ButtonProps> = ({ text, onClick, size = 'm', color = 'primary', icon }) => {
-    const sizeClasses = size === 's' ? 'px-4 py-2' : size === 'm' ? 'px-6 py-3 text-2xl' : 'px-8 py-4 text-3xl';
+    const sizeClasses = size === 's' ? 'px-4 py-2 text-lg' : size === 'm' ? 'px-6 py-3 text-2xl' : 'px-8 py-4 text-3xl';
     const colorClasses = color === 'primary' ? 'bg-primary' : 'bg-secondary';
 
     return (

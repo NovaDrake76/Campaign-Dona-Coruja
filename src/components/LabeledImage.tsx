@@ -20,7 +20,7 @@ const LabeledImage: React.FC<LabeledImageProps> = ({ src, alt, label }) => {
                 <FadeLoader color="#ee59b3" />
             </div>}
             <img src={src} alt={alt} onLoad={() => setIsLoaded(true)} className={`w-72 h-72 md:w-80 md:h-72 object-cover rounded-xl ${isLoaded ? '' : 'hidden'}`} />
-            <div className="text-black text-center h-2 mt-2 text-lg w-2/3">{label}</div>
+            <div className="text-black text-center h-2 mt-2 text-lg w-4/5">{label}</div>
         </div>
     );
 };

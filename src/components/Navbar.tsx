@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Logo from '../assets/coruja.png';
 import Button from './Button';
 import { Link } from 'react-router-dom';
-import FadeLoader from "react-spinners/FadeLoader";
 
 const Navbar: React.FC = () => {
     const [isLogoLoaded, setIsLogoLoaded] = useState(false);

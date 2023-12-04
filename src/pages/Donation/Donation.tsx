@@ -35,14 +35,15 @@ const Donation = () => {
     return (
         <div className="bg-[url('./assets/bg-1.webp')] bg-repeat-none bg-cover ">
             <div className="h-screen w-screen bg-[url('./assets/donation-bg.webp')] bg-repeat-none bg-cover flex flex-col md:flex-row items-center justify-center">
-                <div className="p-4 py-8 bg-white rounded-3xl  flex flex-col items-center gap-4 z-10 w-[216px] h-[302px]">
-                    {isLoading && <div className="flex justify-center items-center mt-4 ml-2">
+                <div className="p-4 py-8 bg-white rounded-3xl  flex flex-col items- gap-4 z-10 w-[216px] h-[302px]">
+                    {isLoading && <div className="flex justify-center items-center mt-4 ml-2 h-[182px]">
                         <FadeLoader color="#ee59b3" />
                     </div>}
-                    <img src="/images/qrcode.png" alt="qr code for donation" width={184} height={184} onLoad={handleImageLoad} />
-                    <Button text={
-                        copied ? "Código copiado!" : "Copiar Código"
-                    } icon={<FaCopy />} size="s" onClick={copyQRCode} />
+                    <img src="/images/qrcode.png" alt="qr code for donation" width={184} onLoad={handleImageLoad} />
+                    <Button
+                        text={copied ? "Código copiado!" : "Copiar Código"}
+                        icon={<FaCopy />} size="s" onClick={copyQRCode} />
+
                 </div>
                 <div className="bg-primary rounded-3xl p-8 flex flex-col  text-2xl font-medium gap-9 -mt-4 md:-mt-0 md:-ml-4">
                     <div className="flex flex-col">

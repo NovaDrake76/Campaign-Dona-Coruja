@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "../../components/Button";
 import { FaCopy, FaCheck } from "react-icons/fa";
 import { FadeLoader } from "react-spinners";
+import { t } from "i18next";
 
 const Donation = () => {
     const [copied, setCopied] = useState(false)
@@ -41,17 +42,17 @@ const Donation = () => {
                     </div>}
                     <img src="/images/qrcode.png" alt="qr code for donation" width={184} onLoad={handleImageLoad} />
                     <Button
-                        text={copied ? "Código copiado!" : "Copiar Código"}
+                        text={copied ? t("donationCopiedButton") : t("donationCopyCodeButton")}
                         icon={<FaCopy />} size="s" onClick={copyQRCode} />
 
                 </div>
                 <div className="bg-primary rounded-3xl p-8 flex flex-col  text-2xl font-medium gap-9 -mt-4 md:-mt-0 md:-ml-4">
                     <div className="flex flex-col">
                         <span>
-                            PIX:
+                            {t("donationPIXLabel")}
                         </span>
                         <span className="flex gap-2 items-center cursor-pointer" onClick={copyNumber}>
-                            (84) 99972-0931
+                            {t("donationPhoneNumber")}
                             {
                                 copiedNumber ? <FaCheck /> : <FaCopy />
                             }
@@ -59,10 +60,10 @@ const Donation = () => {
                     </div>
                     <div className="flex flex-col">
                         <span>
-                            Eugênia Kelly de Araújo
+                            {t("donationAccountHolder")}
                         </span>
                         <span className="font-normal">
-                            Nubank
+                            {t("donationBankName")}
                         </span>
                     </div>
                 </div>

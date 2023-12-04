@@ -1,0 +1,33 @@
+{
+    "heroTitle": "With your help, hundreds of children",
+    "heroSubtitle": "will achieve",
+    "heroSubtitleExtra": "a better future",
+    "donateButton": "Make your donation now",
+    "centralContentText1": "In 2014, a group of people joined efforts to raise money and school supplies to help children whose families couldn't afford all the necessary equipment for back to school. Since then, every year the Dona Coruja campaign ensures that young students in Caicó and the region receive support.",
+    "centralActionButton": "Learn how to help",
+    "centralContentText2": "Our goal is to assist public school students so they can start the school year with decent school supplies. We hope that this will make them more motivated about their studies and help contribute to a better future.",
+    "imageLabel1": "school kits donated",
+    "imageLabel2": "10 years",
+    "imageLabel2Extra": "helping needy children",
+    "imageLabel3": "Countless",
+    "imageLabel3Extra": "institutions benefited (Caicó and region)",
+    "donationPageTitle": "Donation",
+    "donationQRCodeAlt": "QR code for donation",
+    "donationCopyCodeButton": "Copy Code",
+    "donationCopiedButton": "Code Copied!",
+    "donationPIXLabel": "PIX:",
+    "donationPhoneNumber": "(84) 99972-0931",
+    "donationAccountHolder": "Eugênia Kelly de Araújo",
+    "donationBankName": "Nubank",
+    "years": "Years",
+    "navbar": {
+        "home": "Home",
+        "donate": "Donate",
+        "schools": "Schools",
+        "donateButton": "Donate now"
+    },
+    "schools": {
+        "mainText": "Join this chain of goodness. A simple gesture can make all the difference. Check the rules for registration and make the school kits reach your institution. (Brazil only)",
+        "button": "Coming soon!"
+    }
+}

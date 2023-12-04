@@ -1,0 +1,33 @@
+{
+    "heroTitle": "Com a sua ajuda, centenas de crianças",
+    "heroSubtitle": "conquistarão",
+    "heroSubtitleExtra": "um futuro melhor",
+    "donateButton": "Faça agora sua doação",
+    "centralContentText1": "Em 2014, um grupo de pessoas uniu esforços para arrecadar dinheiro e materiais escolares, a fim de ajudar crianças cujas famílias não tinham condições de comprar todo o material necessário para a volta às aulas. Desde então, todos os anos a campanha Dona Coruja garante que jovens estudantes de Caicó e região recebam apoio.",
+    "centralActionButton": "Saiba como ajudar",
+    "centralContentText2": "Nosso objetivo é assistir alunos de escolas públicas, para que possam iniciar o ano letivo com material escolar adequado. Esperamos que isso os torne mais motivados em relação aos estudos e ajude a contribuir para um futuro melhor.",
+    "imageLabel1": "kits escolares doados",
+    "imageLabel2": "10 anos",
+    "imageLabel2Extra": "ajudando crianças necessitadas",
+    "imageLabel3": "Inúmeras",
+    "imageLabel3Extra": "instituições beneficiadas (Caicó e região)",
+    "donationPageTitle": "Doação",
+    "donationQRCodeAlt": "Código QR para doação",
+    "donationCopyCodeButton": "Copiar Código",
+    "donationCopiedButton": "Código Copiado!",
+    "donationPIXLabel": "PIX:",
+    "donationPhoneNumber": "(84) 99972-0931",
+    "donationAccountHolder": "Eugênia Kelly de Araújo",
+    "donationBankName": "Nubank",
+    "years": "Anos",
+    "navbar": {
+        "home": "Início",
+        "donate": "Doação",
+        "schools": "Escolas",
+        "donateButton": "Doe agora"
+    },
+    "schools": {
+        "mainText": "Participe dessa corrente do bem. Um simples gesto pode fazer toda a diferença. Confira as regras para o cadastro e faça os kits escolares chegarem até a sua instituição.",
+        "button": "Em breve!"
+    }
+}

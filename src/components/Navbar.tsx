@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Logo from '../assets/coruja.png';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import { t } from 'i18next';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar: React.FC = () => {
     const [isLogoLoaded, setIsLogoLoaded] = useState(false);
@@ -9,10 +11,10 @@ const Navbar: React.FC = () => {
 
     const links = [
         ...isMobile ? [] : [
-            { to: "/", text: "Início" },
-            { to: "/donation", text: "Doação" },
+            { to: "/", text: t("navbar.home") },
+            { to: "/donation", text: t("navbar.donate") },
         ],
-        { to: "/schools", text: "Escolas" },
+        { to: "/schools", text: t("navbar.schools") },
     ];
 
     const handleLogoLoad = () => {
@@ -23,9 +25,10 @@ const Navbar: React.FC = () => {
         <nav className="absolute flex items-center justify-center bg-transparent py-4 px-6 w-screen">
             <div className='flex items-center justify-between w-full max-w-[1280px]'>
                 <div className="flex items-center ">
+                    <LanguageSelector />
+
                     <Link to="/">
                         {!isLogoLoaded && <div className='h-[75px] w-[75px]'></div>}
-
                         <img src={Logo} alt="Logo" className="h-[75px] w-[75px] object-contain" onLoad={handleLogoLoad} style={{ display: isLogoLoaded ? 'block' : 'none' }} />
                     </Link>
                 </div>
@@ -38,7 +41,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <Link to="/donation">
-                    <Button text="Doe agora" size="s" color="primary" />
+                    <Button text={t("navbar.donateButton")} size="s" color="primary" />
                 </Link>
 
             </div>

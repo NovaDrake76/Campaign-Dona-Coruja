@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Root from "./routes/Root";
@@ -10,8 +10,10 @@ if (!rootElement) document.body.appendChild(root);
 
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Root />
-    </BrowserRouter>
+    <Suspense fallback={<div>Loading....</div>}>
+      <BrowserRouter>
+        <Root />
+      </BrowserRouter>
+    </Suspense>
   </React.StrictMode>
 );

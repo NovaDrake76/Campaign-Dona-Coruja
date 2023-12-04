@@ -41,7 +41,7 @@ const Donation = () => {
                             PIX:
                         </span>
                         <span className="flex gap-2 items-center cursor-pointer" onClick={copyNumber}>
-                            (84)99972-0931
+                            (84) 99972-0931
                             {
                                 copiedNumber ? <FaCheck /> : <FaCopy />
                             }

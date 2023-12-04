@@ -1,3 +1,4 @@
+import { t } from 'i18next';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, LabelList } from 'recharts';
 
 const Graph = () => {
@@ -50,7 +51,8 @@ const Graph = () => {
                                 bottom: 5
                             }}>
                             <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" stroke="#fff" label={{ value: 'Anos', position: 'insideBottomCenter', offset: 0, fill: "#fff", dy: 14 }} />                            <YAxis stroke="#fff" label={{ value: 'Kits', angle: -90, position: 'insideLeft', fill: "#fff" }} />
+                            <XAxis dataKey="name" stroke="#fff" label={{ value: t("years"), position: 'insideBottomCenter', offset: 0, fill: "#fff", dy: 14 }} />
+                            <YAxis stroke="#fff" label={{ value: 'Kits', angle: -90, position: 'insideLeft', fill: "#fff" }} />
                             <Bar dataKey="uv" fill="#fff">
                                 <LabelList dataKey="uv" position="top" fill="#fff" />
                             </Bar>

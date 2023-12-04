@@ -12,7 +12,7 @@ const Hero = () => {
     };
 
     return (
-        <div className={`flex flex-col items-center justify-center w-screen h-[70vh] md:h-[90vh] bg-repeat-none bg-cover gap-4`}
+        <div className={`flex flex-col items-center justify-center w-screen h-[70vh] bg-[#9D8EC1] md:h-[90vh] bg-repeat-none bg-cover gap-4`}
             style={{ backgroundImage: `url(${bgImage})` }}
         >
             <div className="flex flex-col items-center p-2 md:p-0 text-center text-white">

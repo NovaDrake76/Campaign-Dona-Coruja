@@ -7,11 +7,11 @@ const Images = () => {
         alt: 'Crianças sorrindo',
         label: <span><b>+2.700</b> kits escolares doados</span>
     }, {
-        src: '/images/9.jpg',
+        src: '/images/9.webp',
         alt: 'Crianças sorrindo',
         label: <span><b>10 anos</b> beneficiando crianças necessitadas</span>
     }, {
-        src: '/images/1.png',
+        src: '/images/1.webp',
         alt: 'Crianças sorrindo',
         label: <span><b>Inúmeras</b> instituições contempladas (Caicó e região)</span>
     }];

@@ -3,7 +3,7 @@ import LabeledImage from "../../components/LabeledImage";
 const Images = () => {
 
     const Images = [{
-        src: '/images/7.jpg',
+        src: '/images/14.webp',
         alt: 'Crianças sorrindo',
         label: <span><b>+2.700</b> kits escolares doados</span>
     }, {

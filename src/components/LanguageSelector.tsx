@@ -16,8 +16,8 @@ const LanguageSelector = () => {
 
     return (
         <div className="flex md:flex-col gap-2  absolute right-8 top-20 md:top-24 2xl:top-10">
-            <img src={BR} alt="change language to pt" className="w-8" onClick={() => chooseLanguage("pt")} />
-            <img src={US} alt="change language to en" className="w-8 " onClick={() => chooseLanguage("en")} />
+            <img src={BR} alt="change language to pt" className="w-8 object-contain cursor-pointer" onClick={() => chooseLanguage("pt")} />
+            <img src={US} alt="change language to en" className="w-8 object-contain cursor-pointer" onClick={() => chooseLanguage("en")} />
         </div>
     );
 };
